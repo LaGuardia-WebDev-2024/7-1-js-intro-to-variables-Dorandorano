@@ -5,7 +5,8 @@ void setup() {
 }
 
 //🎯Varaible Declarations Go Here
-var eyeSize = 8;
+var eyeSize = 40;
+var teethSize = 40;
 
 //🟢Draw Procedure - Runs on Repeat
 void draw(){
@@ -15,6 +16,7 @@ void draw(){
 
   //💡⬇️⬇️⬇️💡 Your Code For This Unit Goes Here
   
+  fill(220,0,0)
   ellipse(150, 70, 60, 120);  // left ear
   ellipse(240, 70, 60, 120);  // right ear
 
@@ -26,9 +28,10 @@ void draw(){
 
   line(150, 200, 250, 200);   // mouth
 
+  //  teeth
   noFill();
-  rect(185, 200, 15, 10); // left tooth
-  rect(200, 200, 15, 10); // right tooth
+  rect(185, 200, 15, teethSize); 
+  rect(200, 200, 15, teethSize); 
   
 
 }
